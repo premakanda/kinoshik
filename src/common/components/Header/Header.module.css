@@ -1,0 +1,36 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto ;
+  padding: 0 20px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  border-bottom: 3px solid rgb(149, 149, 149);
+  padding: 20px 0;
+}
+ 
+.list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.link {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.activeLink {
+  background-color: #383984;
+  border-radius: 8px;
+  color: #fff;
+}
+

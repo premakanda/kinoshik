@@ -1,0 +1,266 @@
+.page {
+  padding: 24px;
+}
+
+.container {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.wrapper{
+   max-width:1200px;
+ margin:0 auto;
+ padding: 0 20px;
+}
+
+.left {
+  flex: 1;
+  min-width: 0;
+  max-width: 860px;
+}
+
+.right {
+  flex: 0 0 auto;
+}
+
+.poster {
+  width: 280px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: var(--border);
+}
+
+.posterFallback {
+  width: 280px;
+  height: 420px;
+  border-radius: 12px;
+  border: var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.title {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.metaLine {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.metaLine span {
+  padding: 8px 12px;
+  border-radius: var(--border-radius);
+  border: var(--border);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.overview {
+  margin: 0 0 18px 0;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+}
+
+.sectionTitle {
+  margin: 22px 0 12px 0;
+  font-size: 20px;
+}
+
+.genresRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.genrePill {
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: var(--border);
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 14px;
+}
+
+.blockMessage {
+  padding: 12px;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  background: rgba(255, 255, 255, 0.03);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.castGrid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 12px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.actorCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.actorImg {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: var(--border);
+}
+
+.actorFallback {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.85);
+}
+.actorFallback {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.actorName {
+  font-size: 14px;
+  text-align: center;
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.actorRole {
+  font-size: 12px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  max-height: 2.6em;
+}
+
+.similarGrid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.similarCard {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.similarPoster {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 10px;
+  border: var(--border);
+}
+
+.similarFallback {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  border-radius: 10px;
+  border: var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+}
+
+.similarTitle {
+  font-size: 14px;
+  line-height: 1.2;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  min-height: 2.4em;
+}
+
+@media (max-width: 1300px) {
+  .castGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .similarGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left {
+    max-width: 100%;
+  }
+
+  .castGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .similarGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.castSection {
+margin-bottom: 30px;
+  border-top: var(--border);
+}
+
+.castSection .container {
+  flex-direction: column;
+  gap: 0;
+}
+
+.similarSection {
+ 
+  border-top: var(--border);
+}
+
+.similarSection .container {
+  flex-direction: column;
+  gap: 0;
+}

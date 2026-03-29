@@ -1,0 +1,50 @@
+:root {
+  font-family:  Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  --color-white: #FFFFFF;
+  --color-black: #141c2c;
+  --color-footer: rgb(42, 32, 110);
+  --border: 1px solid var(--color-gray-2);
+  --border-radius: 8px;
+  
+  /* Button colors for dark theme */
+  --button-border-color: var(--color-white);
+  --button-text-color: var(--color-white);
+  --button-bg-color: transparent;
+  --button-active-bg-color: #1013ce;
+  --text-color: var(--color-white);
+}
+
+.light {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  
+  /* Button colors for light theme */
+  --button-border-color: var(--color-black);
+  --button-text-color: var(--color-black);
+  --button-bg-color: #f5f5f5;
+  --button-active-bg-color: #1013ce;
+  --text-color: var(--color-black);
+}
+
+.dark {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+body, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+footer {
+  flex-shrink: 0;
+}

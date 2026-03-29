@@ -1,0 +1,27 @@
+.title {
+  text-align: center;
+  font-size: 250px;
+  margin: 0;
+}
+ 
+.subtitle {
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.link {
+  padding: 5px 10px;
+  background-color: blue;
+  color: #fff;
+  font-size: 22px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.linkWrap {
+  display: flex;
+  justify-content: center;
+}

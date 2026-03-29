@@ -1,0 +1,125 @@
+.card {
+ width:220px;
+}
+
+.linkItem {
+ position: relative;
+ width:220px;
+ height:330px;
+ background-color: rgb(85,83,83);
+ border-radius:15px;
+ overflow: hidden;
+}
+
+.linkItem img {
+ width:100%;
+ height:330px;
+ object-fit: cover;
+ transition: transform 0.3s ease;
+ border-radius:15px;
+}
+
+
+.linkItem:hover img {
+ transform: scale(1.05);
+}
+
+.posterFallback {
+ width:100%;
+ height:330px;
+ border-radius:15px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color: #b6b4b4;
+ background-color: rgb(65,63,63);
+ font-weight:400;
+ text-decoration: none;
+}
+.linkMovie {
+ text-decoration: none;
+
+}
+
+.star {
+ position: absolute;
+ bottom:10px;
+ right:10px;
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ min-width:36px;
+ height:36px;
+ padding: 0 10px;
+ background-color: yellow;
+ color: #000;
+ border-radius:999px;
+ font-weight:700;
+}
+
+.likeButton {
+ position: absolute;
+ top:10px;
+ right:10px;
+ width:44px;
+ height:44px;
+ border-radius:50%;
+ border: none;
+ background-color: #8a8a8a;
+ color: #fff;
+ font-size:24px;
+ cursor: pointer;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ transition: all 0.3s ease;
+ opacity:0;
+ visibility: hidden;
+}
+
+.linkItem:hover .likeButton,
+.linkItem:focus-within .likeButton,
+.likeButton.liked {
+ opacity:1;
+ visibility: visible;
+}
+
+.likeButton:hover {
+ transform: scale(1.08);
+}
+
+.likeButton.liked {
+ background-color: #2e4dea;
+ animation: pulse 0.5s;
+}
+
+.title {
+ margin:12px 0 0;
+ font-size:18px;
+ line-height:1.3;
+}
+
+@keyframes pulse {
+ 0% { transform: scale(1); }
+ 50% { transform: scale(1.15); }
+ 100% { transform: scale(1); }
+}
+
+.cardSmall {
+  width: 180px;
+}
+
+.linkItemSmall {
+  width: 180px;
+  height: 270px;
+}
+
+.linkItemSmall img,
+.linkItemSmall .posterFallback {
+  height: 270px;
+}
+
+/* deprecated old scoped helper */
+.filtered .card { width: 180px; }
+.filtered .linkItem { width: 180px; height: 270px; }
+.filtered .linkItem img { height: 270px; }

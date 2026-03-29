@@ -1,0 +1,21 @@
+.button {
+  background: transparent;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border: 1px solid var(--color-white);
+    padding: 8px 14px;
+    color: var(--color-white);
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+
+.button .link {
+    border: 1px solid var(--color-black);
+    color: var(--color-black);
+}
