@@ -2,13 +2,12 @@ import { Header } from "@/common/components/Header/Header";
 import { Routing } from "@/common/routing/Routing";
 import s from "./App.module.css";
 import { Footer } from "@/common/components/Footer/Footer";
-import { toast, ToastContainer } from 'react-toastify'
+import { ToastContainer } from 'react-toastify'
 import { LinearProgress } from "@/common/components/LinearProgress/LinearProgress";
 import { useGlobalLoading } from "@/common/hooks/useGlobalLoading";
 
 
 function App() {
-    //  toast('Only JPEG, PNG or GIF images are allowed', { type: 'error', theme: 'colored' })
     const isGlobalLoading = useGlobalLoading()
   return (
     <div className={s.wrapper}>
